@@ -1,0 +1,37 @@
+
+.frmgrp{
+    height: 37px
+}
+
+.leftSidebar {
+    background: #f7f7f7;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+        padding-left: 32px;
+    padding-top: 32px;
+    border-right: 1px solid #337ac5;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.mainContent {
+    background: #10AE18;
+    color: #fff;
+    width: 400px;
+    height: 300px;
+    float: right;
+}
+
+
+@media (max-width: 450px){
+    .leftSidebar {
+        width: 80%;
+        margin: 0 auto 15px auto;
+        position:inherit;
+    }
+    .mainContent {
+        width: 80%;
+        margin: 0 auto;
+        float:none;
+    }
+}

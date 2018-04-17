@@ -1,0 +1,29 @@
+<div>
+    <h2>My Files</h2>
+    <div style="    width: 70%;
+      margin-top: 70px;
+      margin-left: 16%;">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Document Type</th>
+                    <th> Doc Fin Year </th>
+                    <th>Document Description</th>
+                    <th>Document Name </th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of TotalDocsData">
+                    <td> {{item.doctype}} </td>
+                    <td> {{item.docfinyear}}</td>
+                    <td> {{item.docdesc}}</td>
+                    <td> {{item.docpath}}</td>
+                    <td><button class="btn btn-primary" (click)="download(item.docpath)">
+              Download
+          </button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

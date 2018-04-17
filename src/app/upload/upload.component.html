@@ -1,0 +1,39 @@
+<div>
+  <h2>Upload File</h2>
+  <div style="    width: 70%;
+margin-top: 70px;
+margin-left: 16%;">
+    <form>
+      <div class="form-group frmgrp">
+        <label class="control-label col-sm-2" for="doctype">Doc Type:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="doctype" placeholder="Enter Doc Type" [(ngModel)]="uploadObj.doctype" name="doctype">
+        </div>
+      </div>
+      <div class="form-group frmgrp">
+        <label class="control-label col-sm-2" for="fisyr">Doc Fiscal Year:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="fisyr" placeholder="Enter Doc Fiscal Year" [(ngModel)]="uploadObj.docfinyear"
+            name="fisyr">
+        </div>
+      </div>
+      <div class="form-group frmgrp">
+        <label class="control-label col-sm-2" for="desc">Doc Description:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="desc" placeholder="Enter Doc Description" [(ngModel)]="uploadObj.docdesc" name="desc">
+        </div>
+      </div>
+      <div class="form-group frmgrp" style="margin-left: 18px;">
+        <!-- <input type="file" (change)="fileChange($event)"  placeholder="Upload file" accept=".pdf,.doc,.docx"> -->
+        <input id="cin" name="cin" type="file" (change)="fileChange($event)" placeholder="Upload a file..." accept=".pdf,.doc,.docx"
+        />
+      </div>
+      <div class="form-group frmgrp" style="    margin-left: 171px;">
+
+        <button class="btn btn-primary" (click)="upload()" ng-disabled="!fileList">
+            Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

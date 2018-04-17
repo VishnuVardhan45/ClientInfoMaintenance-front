@@ -1,0 +1,44 @@
+
+.validLogin {
+    border-left: 5px solid green;
+  }
+  
+  .invalidLogin {
+    border-left: 5px solid #c52b2b;
+  }
+  
+  
+  .tabActive {
+    border-bottom: 2px solid #377337;
+  
+  }
+  
+  .loginRegTab {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  .submitActive {
+    border: 1px solid;
+  }
+  
+  .header {
+    background-color: #88c3a5;
+    height: auto;
+    padding-bottom: 14px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    padding-top: 17px;
+    word-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #827f7f;
+  }
+
+  .loginDiv {
+    margin-top: 5%;
+    padding: 50px;
+    border: 1px solid #e6e6e6;
+  }

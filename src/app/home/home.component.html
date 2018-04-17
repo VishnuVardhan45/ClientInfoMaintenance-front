@@ -1,0 +1,27 @@
+﻿
+<div>
+    <div class="row">
+        <div class="col-md-2 leftSidebar">
+            <p><img src="../../assets/img/logo.png" style="width: 95px;padding-bottom: 21px;" /></p>
+            <p><a (click)="currentPage = 'Search'">Search</a></p>
+            <p><a (click)="currentPage = 'Upload'">Upload</a></p>
+            <p><a (click)="currentPage = 'Upload'">Event</a></p>
+            <p><a (click)="currentPage = 'Upload'">Change Details</a></p>
+            <p><a [routerLink]="['/login']">Logout</a></p>
+
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            <div style="float:right">
+                <span style="font-size: 15px;font-weight: bold;font-family: sans-serif;letter-spacing: 1px;">
+                    Cutomer Name:</span>
+                <span style="font-size: 18px;color: #2e7572;letter-spacing: 1px;">{{currentUser.user_email_address}}</span>
+            </div>
+            <div>
+                <app-upload *ngIf="currentPage == 'Upload'"></app-upload>
+                <app-search *ngIf="currentPage == 'Search'"></app-search>
+            </div>
+        </div>
+    </div>
+
+
+</div>
